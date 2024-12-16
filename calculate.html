@@ -1,0 +1,54 @@
+<html>
+<head>
+<script>
+//alert("hlo");
+function fn()
+{
+var num1=document.getElementById("first").value;
+var num2=document.getElementById("second").value;
+var sum=parseInt(num1)+parseInt(num2);
+//window.alert("sum=" +sum);
+//docement.window("sum=" +sum);
+document.getElementById("res").value=sum;
+//alert("num1");
+}
+function fn1()
+{
+var num3=document.getElementById("first").value;
+var num4=document.getElementById("second").value;
+var sum=parseInt(num3)-parseInt(num4);
+document.getElementById("res").value=sum;
+}
+function fn2()
+{
+var num5=document.getElementById("first").value;
+var num6=document.getElementById("second").value;
+var sum=parseInt(num5)*parseInt(num6);
+document.getElementById("res").value=sum;
+}
+function fn3()
+{
+var num7=document.getElementById("first").value;
+var num8=document.getElementById("second").value;
+var sum=parseInt(num7)-parseInt(num8);
+document.getElementById("res").value=sum;
+}
+</script>
+</head>
+<body>
+Enter first number:
+<input type="number" id="first"/>
+</br></br>
+Enter second number:
+<input type="number" id="second"/>
+</br></br>
+result:
+<input type="number" id="res" readonly/>
+</br>
+</br>
+<input type="button" value="+" onclick="fn()"/>
+<input type="button" value="-" onclick="fn1()"/>
+<input type="button" value="X" onclick="fn2()"/>
+<input type="button" value="/" onclick="fn3()"/>
+</body>
+</html>
